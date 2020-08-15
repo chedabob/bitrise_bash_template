@@ -1,27 +1,19 @@
-title: "Install specific bundler version"
-summary: This step allows you to uninstall the system bundler version, and match the one in your Gemfile.
-description: This step allows you to uninstall the system bundler version, and match the one in your Gemfile..
-website: https://github.com/FutureWorkshops/bitrise-step-install-bundler
-source_code_url: https://github.com/FutureWorkshops/bitrise-step-install-bundler
-host_os_tags:
-  - osx-10.10
-  - osx-10.9
-project_type_tags:
-  - ios
-  - xamarin
-type_tags:
-  - xcode
+title: "Bash template"
+summary: This is a template for making a step that runs a bash script
+description:  This is a template for making a step that runs a bash script
+website: https://github.com/chedabob/bitrise_bash_template
+source_code_url: https://github.com/chedabob/bitrise_bash_template
 is_requires_admin_user: true
 is_always_run: false
 is_skippable: false
 deps:
 run_if: ""
 inputs:
-  - gemfilelock_dir: './'
+  - example_param: 'Hello world'
     opts:
-      title: "Gemfile lock directory"
-      summary: "Directory where the Gemfile lock is located"
-      description: "Directory where the Gemfile lock is located"
+      title: "Example Param"
+      summary: "Example parameter"
+      description: "Example parameter"
       is_expand: true
       is_required: true
 
